@@ -1,0 +1,151 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #020617;
+    color: #ffffff;
+}
+
+/* HERO HEADER */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    border-bottom: 1px solid #1e293b;
+}
+
+/* MAIN TITLE */
+.title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #00f5ff;
+
+    display: inline-block;
+    border-bottom: 2px solid #00f5ff;
+
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+
+    text-shadow: none;
+}
+
+/* TEAM TEXT */
+.team {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* PROJECT SUBTITLE (optional styling if you use h2 later) */
+.hero h2 {
+    font-size: 1.5rem;
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+/* PANELS */
+.panel {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+/* PANEL HEADINGS */
+.panel h3 {
+    color: #00f5ff;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: none;
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin: 15px 0 6px;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+/* INPUTS */
+textarea,
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    background: #020617;
+    border: 1px solid #334155;
+    color: #ffffff;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* BUTTONS */
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: #00f5ff;
+    color: #020617;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #06b6d4;
+}
+
+/* COPY BUTTON (slightly different style) */
+button.copy-btn {
+    background: #10b981;
+    color: white;
+}
+
+button.copy-btn:hover {
+    background: #059669;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    border-top: 1px solid #1e293b;
+    color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherVault | Encryption & Decryption</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+</head>
+
+<body>
+
+    
+    <header class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+           
+            <h1 class="title">
+                CipherVault – Secure Text Encryption & Decryption
+            </h1>
+
+            
+            <p class="team">
+                Developed by: Zaheer Ud Deen
+            </p>
+
+        </div>
+    </header>
+
+   
+    <main class="container">
+
+        
+        <section class="panel">
+            <h3> Encryption Panel</h3>
+
+            <label>Enter Plain Text</label>
+            <textarea id="encryptInput" placeholder="Type your message here..."></textarea>
+
+            <label>Select Algorithm</label>
+            <select id="encryptAlgorithm">
+                <option value="caesar">Caesar Cipher</option>
+                <option value="vigenere">Vigenère Cipher</option>
+                <option value="aes">AES Encryption</option>
+            </select>
+
+            <label>Enter Key</label>
+            <input type="text" id="encryptKey" placeholder="Enter key">
+
+            <button onclick="encryptText()">Encrypt</button>
+
+            <label>Encrypted Output</label>
+            <textarea id="encryptOutput" readonly></textarea>
+
+            <button onclick="copyText('encryptOutput')">Copy Encrypted Text</button>
+        </section>
+
+        
+        <section class="panel">
+            <h3> Decryption Panel</h3>
+
+            <label>Enter Cipher Text</label>
+            <textarea id="decryptInput" placeholder="Paste encrypted text here..."></textarea>
+
+            <label>Select Algorithm</label>
+            <select id="decryptAlgorithm">
+                <option value="caesar">Caesar Cipher</option>
+                <option value="vigenere">Vigenère Cipher</option>
+                <option value="aes">AES Decryption</option>
+            </select>
+
+            <label>Enter Key</label>
+            <input type="text" id="decryptKey" placeholder="Enter key">
+
+            <button onclick="decryptText()">Decrypt</button>
+
+            <label>Decrypted Output</label>
+            <textarea id="decryptOutput" readonly></textarea>
+
+            <button onclick="copyText('decryptOutput')">Copy Decrypted Text</button>
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <p>© 2026 CipherVault Project | Cybersecurity Class Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
